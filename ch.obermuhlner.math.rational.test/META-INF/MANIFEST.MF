@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: BigRational JUnit Tests
+Bundle-SymbolicName: ch.obermuhlner.math.rational.test
+Bundle-Version: 0.1
+Fragment-Host: ch.obermuhlner.math.rational;bundle-version="0.1.0"

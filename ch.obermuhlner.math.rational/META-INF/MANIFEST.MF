@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: BigRational
+Bundle-SymbolicName: ch.obermuhlner.math.rational
+Bundle-Version: 0.1.0
+Bundle-Vendor: Eric Obermuhlner
+Export-Package: ch.obermuhlner.math.rational
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
