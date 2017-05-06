@@ -2,11 +2,10 @@ package ch.obermuhlner.math.rational.example;
 
 import static ch.obermuhlner.math.rational.BigRational.ONE;
 import static ch.obermuhlner.math.rational.BigRational.ZERO;
+import static ch.obermuhlner.math.rational.BigRational.log;
 import static ch.obermuhlner.math.rational.BigRational.pi;
 import static ch.obermuhlner.math.rational.BigRational.sin;
 import static ch.obermuhlner.math.rational.BigRational.valueOf;
-
-import java.math.BigDecimal;
 
 import ch.obermuhlner.math.rational.BigRational;
 
@@ -15,8 +14,9 @@ public class SimpleExamples {
 	public static void main(String[] args) {
 //		exampleHelloRational();
 //		exampleSin();
+		exampleLog();
 //		examplePiPrecision();
-		examplePiHighPrecision();
+//		examplePiHighPrecision();
 //		examplePiSimple();
 
 	}
@@ -41,6 +41,21 @@ public class SimpleExamples {
 		
 		while (x.compareTo(ONE) < 0) {
 			System.out.println("sin(" + x + ") = " + sin(x, precision));
+			x = x.add(step);
+		}
+		System.out.println();
+	}
+
+	private static void exampleLog() {
+		System.out.println("Log calculations");
+
+		BigRational x = valueOf(1, 10);
+		BigRational step = valueOf(1, 10);
+		BigRational end = valueOf(10);
+		int precision = 20;
+		
+		while (x.compareTo(end) < 0) {
+			System.out.println("ln(" + x + ") = " + log(x, precision));
 			x = x.add(step);
 		}
 		System.out.println();
