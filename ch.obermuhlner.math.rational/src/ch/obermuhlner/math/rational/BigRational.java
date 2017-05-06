@@ -1260,7 +1260,7 @@ public class BigRational implements Comparable<BigRational> {
 	public static BigRational log(BigRational x, int scale) {
 		// http://en.wikipedia.org/wiki/Natural_logarithm
 		if (x.signum() <= 0) {
-			throw new ArithmeticException("Log 0");
+			throw new ArithmeticException("Illegal log(x) for x <= 0");
 		}
 		if (x.isOne()) {
 			return ZERO;
